@@ -118,8 +118,15 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
-			<scope>compile</scope>
+			<scope>provided</scope>
 		</dependency>
+		<!-- JSP -->
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.0</version>
+            <scope>provided</scope>
+        </dependency>
 		<!-- icardpay -->
 		<!-- <dependency>
 			<groupId>com.icardpay.component</groupId>
