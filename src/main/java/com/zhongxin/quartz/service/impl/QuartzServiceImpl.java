@@ -18,8 +18,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 import org.springframework.stereotype.Service;
 
-import com.icardpay.component.common.log.Logger;
-import com.icardpay.component.common.log.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.zhongxin.quartz.core.QuartzJobFactory;
 import com.zhongxin.quartz.dao.TaskErrorsDao;
 import com.zhongxin.quartz.dao.TaskInformationsDao;

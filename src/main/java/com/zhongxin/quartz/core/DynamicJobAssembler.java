@@ -5,8 +5,8 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Component;
 
-import com.icardpay.component.common.log.Logger;
-import com.icardpay.component.common.log.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.zhongxin.quartz.service.QuartzService;
 
 @Component

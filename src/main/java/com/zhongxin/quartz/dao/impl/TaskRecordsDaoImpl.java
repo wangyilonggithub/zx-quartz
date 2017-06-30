@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
-import com.icardpay.component.common.StringUtils;
 import com.zhongxin.quartz.dao.BaseDao;
 import com.zhongxin.quartz.dao.TaskRecordsDao;
 import com.zhongxin.quartz.entity.TaskRecordsEntity;

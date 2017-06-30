@@ -4,8 +4,8 @@ import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
-import com.icardpay.component.common.log.Logger;
-import com.icardpay.component.common.log.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.zhongxin.quartz.dao.TaskRecordsDao;
 import com.zhongxin.quartz.entity.TaskRecordsEntity;
 import com.zhongxin.quartz.service.QuartzService;

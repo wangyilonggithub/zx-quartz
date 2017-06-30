@@ -9,9 +9,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import com.icardpay.component.common.DateUtils;
-import com.icardpay.component.common.log.Logger;
-import com.icardpay.component.common.log.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author：eddysheng

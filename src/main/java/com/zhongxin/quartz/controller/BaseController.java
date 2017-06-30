@@ -1,7 +1,7 @@
 package com.zhongxin.quartz.controller;
 
-import com.icardpay.component.common.log.Logger;
-import com.icardpay.component.common.log.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class BaseController {
 	

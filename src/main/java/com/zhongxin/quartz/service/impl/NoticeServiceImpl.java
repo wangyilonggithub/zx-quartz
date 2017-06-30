@@ -10,8 +10,8 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
-import com.icardpay.component.common.httpclient.SimpleHttpUtils;
 import com.zhongxin.quartz.service.NoticeService;
+import com.zhongxin.quartz.util.HttpClientUtil;
 import com.zhongxin.quartz.util.JmsClient;
 
 @Service("noticeService")
@@ -62,7 +62,9 @@ public class NoticeServiceImpl implements NoticeService{
 			}
 			Map<String, String> map = new HashMap<String, String>();
 			map.put("executeParamter", executeParamter);
-			String res = SimpleHttpUtils.httpPost(url,map);
+			//String res = SimpleHttpUtils.httpPost(url,map);
+			String res = HttpClientUtil.doPost(url,map);
+			
 			logger.info("http request result is "+res);
 		} catch (Exception e) {
 			// TODO: handle exception
