@@ -253,12 +253,13 @@ public class QuartzServiceImpl implements QuartzService{
 			}
 			String timeKeyValue = DateUtil.getTimeKeyValue(taskInformationsEntity.getTimeKey());
 			logger.info("timeKeyValue：" + timeKeyValue);
-			TaskRecordsEntity recordsEntity = recordsDao.getRecordsByTaskNo(taskNo,timeKeyValue);
-			if(null != recordsEntity){
-				logger.info("task no :" + taskNo + " this time " + timeKeyValue + " hava been executed");
-				return null;
-			}
-			taskInformationsEntity.setFrozenStatus(TaskStatusEnum.FROZEN);
+//			TaskRecordsEntity recordsEntity = recordsDao.getRecordsByTaskNo(taskNo,timeKeyValue);
+//			if(null != recordsEntity){
+//				logger.info("task no :" + taskNo + " this time " + timeKeyValue + " hava been executed");
+//				return null;
+//			}
+
+//			taskInformationsEntity.setFrozenStatus(TaskStatusEnum.FROZEN);
 			taskInformationsEntity.setFrozenTime(DateUtil.getLastModifyTime());
 			taskInformationsEntity.setLastModifyTime(DateUtil.getLastModifyTime());
 			taskInformationsDao.updateById(taskInformationsEntity);
