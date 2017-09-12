@@ -3,7 +3,7 @@
 
 需要先安装activemq
 
-通过maven的tomcat插件可以直接运行tomcat7:run
+通过maven的tomcat插件可以直接运行mvn clean install tomcat7:run
 
 
 在浏览器中输入 http://localhost:8080/ 访问
